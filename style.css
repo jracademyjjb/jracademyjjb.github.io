@@ -65,3 +65,15 @@ footer .copyright {
   font-size: 0.9rem;
   color: #ccc;
 }
+.bandeiras {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.bandeiras img.bandeira {
+  width: 100px;
+  height: auto;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
