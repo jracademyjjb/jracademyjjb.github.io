@@ -1,96 +1,39 @@
 
 body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
-  scroll-behavior: smooth;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    text-align: center;
 }
 
 header {
-  background-color: #1a1a1a;
-  color: white;
-  text-align: center;
-  padding: 50px 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    background-color: #1f1f1f;
 }
 
 .logo {
-  width: 120px;
-  margin-bottom: 20px;
-  transition: transform 0.3s ease;
-}
-
-.logo:hover {
-  transform: scale(1.05);
-}
-
-h1 {
-  font-size: 32px;
-  margin: 0;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-h2 {
-  text-align: center;
-  margin-top: 40px;
-  font-size: 28px;
-  color: #1a1a1a;
-}
-
-.intro, .infos, .location {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  transition: all 0.3s ease;
-}
-
-.intro ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.intro li {
-  padding: 8px 0;
-  font-weight: 500;
-}
-
-.location iframe {
-  width: 100%;
-  height: 300px;
-  margin-top: 15px;
-  border-radius: 10px;
-  border: 0;
+    width: 100px;
+    height: auto;
 }
 
 footer {
-  background-color: #1a1a1a;
-  color: white;
-  text-align: center;
-  padding: 30px 20px;
-  margin-top: 40px;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #000000;
+    text-align: center;
 }
 
-footer .social-icons {
-  margin: 15px 0;
+.instagram-link a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
 }
 
-footer .social-icons a {
-  color: white;
-  font-size: 24px;
-  margin: 0 10px;
-  transition: color 0.3s ease;
-}
-
-footer .social-icons a:hover {
-  color: #f2c14e;
-}
-
-footer a {
-  color: #f2c14e;
-  text-decoration: none;
+.instagram-link img {
+    width: 24px;
+    height: 24px;
 }
