@@ -3,154 +3,127 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JR Academy JJB</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>JR ACADEMY JJB</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      background-color: white;
-      color: black;
     }
+
     header {
       background-color: white;
-      padding: 20px;
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      justify-content: flex-start;
+      padding: 15px 20px;
     }
+
     .logo {
-      height: 60px;
+      height: 80px;
     }
+
     .flags {
-      text-align: center;
-      margin: 10px 0;
+      display: flex;
+      gap: 10px;
     }
+
     .flags img {
-      width: 30px;
-      margin: 0 10px;
+      width: 28px;
       cursor: pointer;
     }
-    .titulo {
-      text-align: center;
-      margin-top: 10px;
-      font-size: 24px;
-      font-weight: bold;
-    }
+
     .main-section {
-      background-color: black;
+      background-color: #000;
+      color: #fff;
+      padding: 40px 20px;
+    }
+
+    .academy-title {
       color: white;
-      padding: 30px 20px;
-    }
-    .main-section h2 {
-      color: white;
-      margin-bottom: 15px;
-    }
-    .main-section p {
-      margin-bottom: 15px;
-      line-height: 1.6;
-    }
-    ul {
-      margin-left: 20px;
+      font-size: 26px;
+      font-weight: bold;
       margin-bottom: 20px;
     }
-    ul li {
-      margin-bottom: 8px;
-    }
+
     .info-image {
+      display: block;
       max-width: 100%;
+      height: auto;
       border-radius: 8px;
-      margin-top: 20px;
+      margin: 30px auto;
     }
-    iframe {
-      width: 100%;
-      height: 300px;
-      border: none;
-      border-radius: 10px;
-      margin-top: 30px;
+
+    section.location {
+      padding: 40px 20px;
     }
+
     footer {
       text-align: center;
-      background-color: #f3f3f3;
-      padding: 20px;
+      padding: 30px 20px;
       font-size: 14px;
     }
+
     footer a {
       color: #000;
       text-decoration: none;
-      font-weight: bold;
+    }
+
+    ul {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 6px;
     }
   </style>
 </head>
 <body>
-
-  <!-- TOPO -->
   <header>
-    <img src="logo_transparente.png" alt="Logo JR Academy" class="logo">
+    <img src="logo_transparente_maior.png" alt="Logo JR Academy" class="logo" />
+    <div class="flags">
+      <img src="https://flagcdn.com/w40/br.png" alt="Português" />
+      <img src="https://flagcdn.com/w40/fr.png" alt="Français" />
+      <img src="https://flagcdn.com/w40/gb.png" alt="English" />
+    </div>
   </header>
 
-  <!-- BANDEIRAS -->
-  <div class="flags">
-    <img src="https://flagcdn.com/w40/br.png" alt="Português">
-    <img src="https://flagcdn.com/w40/fr.png" alt="Français">
-    <img src="https://flagcdn.com/w40/gb.png" alt="English">
-  </div>
+  <div class="main-section">
+    <h1 class="academy-title">JR ACADEMY</h1>
+    <p>Acreditamos que o Jiu-Jitsu vai além de uma arte marcial — ele transforma vidas. Através da prática contínua, nossos alunos desenvolvem não apenas habilidades técnicas, mas também valores fundamentais como disciplina, autoconfiança, resiliência e respeito. O tatame se torna um espaço de crescimento pessoal e coletivo, onde cada desafio é uma oportunidade de evolução.</p>
 
-  <!-- TÍTULO -->
-  <div class="titulo">JR ACADEMY JJB</div>
+    <p>Fundada pelo professor brasileiro João Ramos na França, a JR Academy tem como missão ensinar com autenticidade, acolhimento e excelência. Trazendo a essência do Jiu-Jitsu Brasileiro diretamente de suas raízes, oferecemos uma abordagem humana e técnica, voltada para todos os níveis de praticantes.</p>
 
-  <!-- SEÇÃO PRINCIPAL -->
-  <section class="main-section">
-    <p>
-      Acreditamos que o Jiu-Jitsu vai além de uma arte marcial — ele transforma vidas.
-      Através da prática contínua, nossos alunos desenvolvem não apenas habilidades técnicas,
-      mas também valores fundamentais como disciplina, autoconfiança, resiliência e respeito.
-    </p>
-    <p>
-      Fundada pelo professor brasileiro <strong>João Ramos</strong> na França, a JR Academy tem como missão ensinar com autenticidade,
-      acolhimento e excelência. Trazendo a essência do Jiu-Jitsu Brasileiro diretamente de suas raízes, oferecemos
-      uma abordagem humana e técnica, voltada para todos os níveis de praticantes.
-    </p>
-    <p>
-      Nossa academia conta com aulas com e sem kimono (submission/grappling), estruturadas para atender diversos perfis:
-    </p>
+    <p>Nossa academia conta com aulas com e sem kimono (submission/grappling), estruturadas para atender diversos perfis:</p>
     <ul>
       <li><strong>Crianças</strong> — promovendo desenvolvimento físico, motor e social desde cedo.</li>
       <li><strong>Adolescentes</strong> — reforçando autoconfiança, controle emocional e superação.</li>
       <li><strong>Adultos</strong> — voltado ao bem-estar, saúde e hobby ou evolução técnica.</li>
       <li><strong>Mulheres</strong> — com foco em autodefesa, empoderamento e qualidade de vida.</li>
     </ul>
-    <p>
-      Aqui, cada aluno é acompanhado com atenção, respeitando seus objetivos e ritmo.
-      Seja para quem busca performance, autoconhecimento ou apenas uma nova jornada,
-      a JR Academy JJB está de portas abertas.
-    </p>
 
-    <!-- IMAGEM INFORMATIVA -->
-    <h2>Informações da JR Academy</h2>
-    <img src="info-jr-academy.jpg" alt="Informações RNA e SIREN" class="info-image" />
+    <p>Aqui, cada aluno é acompanhado com atenção, respeitando seus objetivos e ritmo. Seja para quem busca performance, autoconhecimento ou apenas uma nova jornada, a JR Academy JJB está de portas abertas.</p>
+
+    <h2 style="margin-top: 50px;">Informações da JR Academy</h2>
+    <img src="IMG_6780.jpeg" alt="Informações RNA SIREN" class="info-image">
+  </div>
+
+  <section class="location">
+    <h2>Localização</h2>
+    <p><strong>Endereço:</strong> 45 Traverse du Couvent, Pertuis — 84120, França</p>
+    <iframe 
+      src="https://www.google.com/maps?q=45+Traverse+du+Couvent,+Pertuis,+84120,+França&output=embed"
+      width="100%" height="300" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy">
+    </iframe>
   </section>
 
-  <!-- LOCALIZAÇÃO -->
-  <iframe 
-    src="https://www.google.com/maps?q=45+Traverse+du+Couvent,+Pertuis,+84120,+França&output=embed"
-    allowfullscreen
-    loading="lazy">
-  </iframe>
-
-  <!-- RODAPÉ -->
   <footer>
     <p>
-      Instagram: <a href="https://www.instagram.com/joaoramosdeandrade" target="_blank">@joaoramosdeandrade</a>
+      <a href="https://www.instagram.com/joaoramosdeandrade" target="_blank">Instagram: @joaoramosdeandrade</a>
     </p>
     <p>
       Site oficial: <a href="https://jracademyjjb.github.io" target="_blank">jracademyjjb.github.io</a>
     </p>
   </footer>
-
 </body>
 </html>
