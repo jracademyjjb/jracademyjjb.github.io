@@ -3,92 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JR ACADEMY JJB</title>
+  <title>JR ACADEMY</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Roboto', sans-serif;
-      background-color: #111;
+      background-color: #000;
       color: #fff;
       line-height: 1.6;
     }
     header {
       background-color: #fff;
-      color: #000;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 10px 30px;
+      padding: 20px;
     }
     .logo {
-      height: 80px;
+      height: 60px;
     }
     h1 {
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin-left: 10px;
       color: #000;
-    }
-    .flags {
-      display: flex;
-      gap: 10px;
+      font-size: 24px;
+      font-weight: 700;
     }
     .flags img {
-      width: 30px;
+      width: 32px;
+      margin-left: 10px;
       cursor: pointer;
     }
-
-    .lang-section { display: none; padding: 40px 20px; max-width: 900px; margin: auto; }
-    .lang-section.active { display: block; }
-    .lang-section h2 { color: #fff; margin-bottom: 20px; }
-    .lang-section p, .lang-section li { color: #fff; font-size: 1.1rem; margin-bottom: 10px; }
-    .lang-section ul { margin-top: 10px; padding-left: 20px; }
-
-    .image-info {
-      text-align: center;
-      margin-top: 30px;
-    }
-    .image-info img {
-      max-width: 90%;
-      border-radius: 10px;
-    }
-
-    .location {
+    section {
       padding: 40px 20px;
       max-width: 900px;
       margin: auto;
     }
-    .location h2 {
+    section h2 {
       color: #fff;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
-    .location iframe {
+    ul {
+      margin: 15px 0 30px 20px;
+    }
+    iframe {
       width: 100%;
       height: 300px;
       border: none;
       border-radius: 10px;
+      margin-top: 10px;
     }
-
+    .info-image {
+      display: flex;
+      justify-content: center;
+      margin: 40px 0;
+    }
+    .info-image img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
     footer {
-      text-align: center;
+      background-color: #111;
       padding: 30px 20px;
-      background-color: #000;
+      text-align: center;
     }
     footer a {
       color: #ffcc00;
       text-decoration: none;
     }
-    footer img {
-      width: 30px;
-      vertical-align: middle;
-    }
+    .lang-section { display: none; }
+    .lang-section.active { display: block; }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo_transparente_maior.png" alt="Logo" class="logo">
+    <img src="logo_transparente_maior.png" alt="Logo" class="logo" />
     <h1>JR ACADEMY</h1>
     <div class="flags">
       <img src="https://flagcdn.com/w40/br.png" alt="Português" onclick="switchLang('pt')" />
@@ -99,70 +88,121 @@
 
   <!-- PORTUGUÊS -->
   <section class="lang-section lang-pt active">
-    <p>A JR ACADEMY acredita que o Jiu-Jitsu vai além de uma arte marcial — ele transforma vidas. Através da prática contínua, nossos alunos desenvolvem não apenas habilidades técnicas, mas também valores fundamentais como disciplina, autoconfiança, resiliência e respeito.</p>
-    <p>Fundada pelo professor brasileiro João Ramos na França, temos como missão ensinar com autenticidade, acolhimento e excelência. Trazendo a essência do Jiu-Jitsu diretamente do Brasil, nossa abordagem humana e técnica é voltada para todos os níveis de praticantes.</p>
-    <p>Oferecemos aulas com e sem kimono (submission/grappling), estruturadas para:</p>
+    <p>
+      Acreditamos que o Jiu-Jitsu vai além de uma arte marcial — ele transforma vidas. Através da prática contínua, nossos alunos desenvolvem não apenas habilidades técnicas, mas também valores fundamentais como disciplina, autoconfiança, resiliência e respeito.
+    </p>
+    <p>
+      Fundada pelo professor brasileiro João Ramos na França, nossa missão é ensinar com autenticidade, acolhimento e excelência. Trazendo a essência do Jiu-Jitsu diretamente de suas raízes, oferecemos uma abordagem humana e técnica, voltada para todos os níveis de praticantes.
+    </p>
+    <p>
+      Nossa academia conta com aulas com e sem kimono (submission/grappling), estruturadas para:
+    </p>
     <ul>
-      <li>Crianças — desenvolvimento físico, motor e social</li>
-      <li>Adolescentes — autoconfiança e superação</li>
-      <li>Adultos — bem-estar, hobby ou performance</li>
-      <li>Mulheres — autodefesa, empoderamento e qualidade de vida</li>
+      <li>Crianças — desenvolvimento físico, motor e social.</li>
+      <li>Adolescentes — autoconfiança e superação.</li>
+      <li>Adultos — saúde, hobby e evolução técnica.</li>
+      <li>Mulheres — autodefesa, empoderamento e bem-estar.</li>
     </ul>
-    <p>Cada aluno é acompanhado com atenção e respeito ao seu próprio ritmo.</p>
-  </section>
 
-  <!-- FRANCÊS -->
-  <section class="lang-section lang-fr">
-    <p>JR ACADEMY croit que le Jiu-Jitsu va au-delà d’un art martial — il transforme des vies. Grâce à une pratique constante, nos élèves développent non seulement des compétences techniques, mais aussi des valeurs comme la discipline, la confiance et le respect.</p>
-    <p>Fondée par le professeur brésilien João Ramos en France, notre mission est d’enseigner avec authenticité, accueil et excellence. Apportant l’essence du Jiu-Jitsu du Brésil, notre approche humaine et technique s’adresse à tous les niveaux.</p>
-    <p>Nous proposons des cours avec et sans kimono (grappling) pour :</p>
-    <ul>
-      <li>Enfants — développement physique, moteur et social</li>
-      <li>Adolescents — confiance et dépassement de soi</li>
-      <li>Adultes — bien-être, loisir ou performance</li>
-      <li>Femmes — autodéfense, empowerment et qualité de vie</li>
-    </ul>
-    <p>Chaque élève est accompagné avec attention, selon son rythme et ses objectifs.</p>
-  </section>
+    <div class="info-image">
+      <img src="IMG_6780.jpeg" alt="Informações da academia" />
+    </div>
 
-  <!-- INGLÊS -->
-  <section class="lang-section lang-en">
-    <p>JR ACADEMY believes that Jiu-Jitsu goes beyond martial arts — it transforms lives. Through continuous practice, students develop not only technical skills but also core values such as discipline, confidence, resilience, and respect.</p>
-    <p>Founded by Brazilian professor João Ramos in France, our mission is to teach with authenticity, care, and excellence. Bringing the essence of Brazilian Jiu-Jitsu, our approach is both human and technical for all levels.</p>
-    <p>We offer gi and no-gi (submission/grappling) classes for:</p>
-    <ul>
-      <li>Children — physical, motor, and social development</li>
-      <li>Teenagers — confidence and emotional control</li>
-      <li>Adults — wellness, hobby, or performance</li>
-      <li>Women — self-defense, empowerment, and quality of life</li>
-    </ul>
-    <p>Each student is followed with care and respect for their individual pace.</p>
-  </section>
-
-  <div class="image-info">
-    <img src="IMG_6780.jpeg" alt="Informações JR ACADEMY JJB">
-  </div>
-
-  <section class="location">
     <h2>Localização</h2>
     <p><strong>Endereço:</strong> 45 Traverse du Couvent, Pertuis — 84120, França</p>
-    <iframe src="https://www.google.com/maps?q=45+Traverse+du+Couvent,+Pertuis,+84120,+França&output=embed" allowfullscreen loading="lazy"></iframe>
+    <iframe src="https://www.google.com/maps?q=45+Traverse+du+Couvent,+Pertuis,+84120,+França&output=embed" allowfullscreen="" loading="lazy"></iframe>
+
+    <footer>
+      <p>Siga-nos nas redes sociais:</p>
+      <div style="margin: 10px 0;">
+        <a href="https://www.instagram.com/joaoramosdeandrade" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" style="width: 28px; vertical-align: middle;" />
+          <span style="margin-left: 8px;">@joaoramosdeandrade</span>
+        </a>
+      </div>
+      <p>Site oficial: <a href="https://jracademyjjb.github.io" target="_blank">www.jracademyjjb.github.io</a></p>
+    </footer>
   </section>
 
-  <footer>
-    <p>Siga-nos nas redes sociais:</p>
+  <!-- FRANÇAIS -->
+  <section class="lang-section lang-fr">
     <p>
-      <a href="https://www.instagram.com/joaoramosdeandrade" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" />
-        @joaoramosdeandrade
-      </a>
+      Nous croyons que le Jiu-Jitsu va bien au-delà d’un art martial — il transforme des vies. Par la pratique régulière, nos élèves développent des compétences techniques et des valeurs essentielles telles que la discipline, la confiance en soi, la résilience et le respect.
     </p>
-    <p>Site oficial: <a href="https://jracademyjjb.github.io" target="_blank">www.jracademyjjb.github.io</a></p>
-  </footer>
+    <p>
+      Fondée par le professeur brésilien João Ramos en France, notre mission est d’enseigner avec authenticité, accueil et excellence. En apportant l’essence du Jiu-Jitsu depuis ses racines, nous proposons une approche humaine et technique adaptée à tous les niveaux.
+    </p>
+    <p>
+      Notre académie propose des cours avec ou sans kimono (grappling), destinés à :
+    </p>
+    <ul>
+      <li>Enfants — développement physique, moteur et social.</li>
+      <li>Adolescents — confiance en soi et dépassement de soi.</li>
+      <li>Adultes — bien-être, loisir et progression technique.</li>
+      <li>Femmes — autodéfense, autonomie et qualité de vie.</li>
+    </ul>
+
+    <div class="info-image">
+      <img src="IMG_6780.jpeg" alt="Informations de l'académie" />
+    </div>
+
+    <h2>Localisation</h2>
+    <p><strong>Adresse :</strong> 45 Traverse du Couvent, Pertuis — 84120, France</p>
+    <iframe src="https://www.google.com/maps?q=45+Traverse+du+Couvent,+Pertuis,+84120,+França&output=embed" allowfullscreen="" loading="lazy"></iframe>
+
+    <footer>
+      <p>Suivez-nous sur les réseaux sociaux :</p>
+      <div style="margin: 10px 0;">
+        <a href="https://www.instagram.com/joaoramosdeandrade" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" style="width: 28px; vertical-align: middle;" />
+          <span style="margin-left: 8px;">@joaoramosdeandrade</span>
+        </a>
+      </div>
+      <p>Site officiel : <a href="https://jracademyjjb.github.io" target="_blank">www.jracademyjjb.github.io</a></p>
+    </footer>
+  </section>
+
+  <!-- ENGLISH -->
+  <section class="lang-section lang-en">
+    <p>
+      We believe Jiu-Jitsu goes beyond a martial art — it transforms lives. Through continuous training, our students develop not only technical skills but also core values like discipline, confidence, resilience, and respect.
+    </p>
+    <p>
+      Founded by Brazilian instructor João Ramos in France, our mission is to teach with authenticity, warmth, and excellence. Bringing the pure essence of Jiu-Jitsu from its roots, we offer a human and technical approach for all levels.
+    </p>
+    <p>
+      We offer gi and no-gi classes (submission/grappling) structured for:
+    </p>
+    <ul>
+      <li>Children — physical, motor, and social development.</li>
+      <li>Teenagers — self-confidence and resilience.</li>
+      <li>Adults — health, hobby, and technical growth.</li>
+      <li>Women — self-defense, empowerment, and well-being.</li>
+    </ul>
+
+    <div class="info-image">
+      <img src="IMG_6780.jpeg" alt="Academy Information" />
+    </div>
+
+    <h2>Location</h2>
+    <p><strong>Address:</strong> 45 Traverse du Couvent, Pertuis — 84120, France</p>
+    <iframe src="https://www.google.com/maps?q=45+Traverse+du+Couvent,+Pertuis,+84120,+França&output=embed" allowfullscreen="" loading="lazy"></iframe>
+
+    <footer>
+      <p>Follow us on social media:</p>
+      <div style="margin: 10px 0;">
+        <a href="https://www.instagram.com/joaoramosdeandrade" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" style="width: 28px; vertical-align: middle;" />
+          <span style="margin-left: 8px;">@joaoramosdeandrade</span>
+        </a>
+      </div>
+      <p>Official website: <a href="https://jracademyjjb.github.io" target="_blank">www.jracademyjjb.github.io</a></p>
+    </footer>
+  </section>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();</script>
   <script>
+    AOS.init();
     function switchLang(lang) {
       document.querySelectorAll('.lang-section').forEach(el => el.classList.remove('active'));
       document.querySelector('.lang-' + lang).classList.add('active');
