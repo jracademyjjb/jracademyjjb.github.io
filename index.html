@@ -4,89 +4,169 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>JR ACADEMY JJB</title>
-
-  <!-- Estilos e fontes -->
-  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #111;
+      color: #fff;
+      line-height: 1.6;
+      padding-bottom: 50px;
+    }
+    header {
+      text-align: center;
+      padding: 30px 20px 10px;
+      background-color: #000;
+    }
+    .logo {
+      width: 120px;
+      margin-bottom: 10px;
+    }
+    h1 {
+      font-size: 2rem;
+      color: #ffcc00;
+    }
+    .flags {
+      margin-top: 15px;
+    }
+    .flags img {
+      width: 30px;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+    section {
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    section h2 { color: #ffcc00; margin-bottom: 10px; }
+    ul {
+      list-style: disc;
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+    footer {
+      text-align: center;
+      background-color: #000;
+      padding: 30px 20px;
+    }
+    footer a { color: #ffcc00; text-decoration: none; }
+    footer span { color: #fff; }
+    .lang-section { display: none; }
+    .lang-section.active { display: block; }
+  </style>
 </head>
 <body>
   <header data-aos="fade-down">
     <img src="logo.png.jpg" alt="Logo JR ACADEMY JJB" class="logo" />
     <h1>JR ACADEMY JJB</h1>
+    <div class="flags">
+      <img src="https://flagcdn.com/w40/br.png" alt="Português" onclick="switchLang('pt')" />
+      <img src="https://flagcdn.com/w40/fr.png" alt="Français" onclick="switchLang('fr')" />
+      <img src="https://flagcdn.com/w40/gb.png" alt="English" onclick="switchLang('en')" />
+    </div>
   </header>
 
-  <section class="intro" data-aos="fade-up">
-    <p>Oferecemos aulas de Jiu-Jitsu Brasileiro com e sem kimono (submission/grappling), voltadas para:</p>
-    <ul>
-      <li data-aos="fade-left">Crianças</li>
-      <li data-aos="fade-left" data-aos-delay="100">Adolescentes</li>
-      <li data-aos="fade-left" data-aos-delay="200">Adultos</li>
-      <li data-aos="fade-left" data-aos-delay="300">Mulheres</li>
-    </ul>
-    <p data-aos="zoom-in" data-aos-delay="400">Temos aulas personalizadas para todos os níveis!</p>
+  <!-- PORTUGUÊS -->
+  <section class="lang-section lang-pt active" data-aos="fade-up">
+    <section>
+      <p>Oferecemos aulas de Jiu-Jitsu Brasileiro com e sem kimono (submission/grappling), voltadas para:</p>
+      <ul>
+        <li>Crianças</li>
+        <li>Adolescentes</li>
+        <li>Adultos</li>
+        <li>Mulheres</li>
+      </ul>
+      <p>Temos aulas personalizadas para todos os níveis!</p>
+    </section>
+    <section>
+      <h2>Sobre a JR ACADEMY JJB</h2>
+      <p>Na JR ACADEMY JJB, cultivamos mais do que técnicas de combate — promovemos respeito, disciplina, confiança e evolução pessoal por meio do Jiu-Jitsu Brasileiro. Fundada por um professor brasileiro apaixonado pela arte suave, a academia tem como missão transmitir os valores do esporte com autenticidade, acolhimento e excelência.</p>
+      <p>Estabelecido na França, o professor traz consigo a essência do Jiu-Jitsu diretamente do Brasil, adaptando os ensinamentos para públicos de todas as idades e objetivos.</p>
+    </section>
   </section>
 
-  <section class="sobre" data-aos="fade-up" data-aos-delay="300">
-    <h2>Sobre a JR ACADEMY JJB</h2>
-    <p>
-      Na JR ACADEMY JJB, cultivamos mais do que técnicas de combate — promovemos respeito, disciplina,
-      confiança e evolução pessoal por meio do Jiu-Jitsu Brasileiro. Fundada por um professor brasileiro
-      apaixonado pela arte suave, a academia tem como missão transmitir os valores do esporte com autenticidade,
-      acolhimento e excelência.
-    </p>
-    <p>
-      Estabelecido na França, o professor traz consigo a essência do Jiu-Jitsu diretamente do Brasil,
-      adaptando os ensinamentos para públicos de todas as idades e objetivos. Com uma abordagem humana, técnica
-      e progressiva, a JR ACADEMY oferece aulas com e sem kimono (grappling), além de treinos específicos para:
-    </p>
-    <ul>
-      <li>Crianças e adolescentes (formação educacional e motora)</li>
-      <li>Mulheres (autoconfiança, defesa pessoal, bem-estar)</li>
-      <li>Adultos (iniciantes, hobby, saúde e performance)</li>
-      <li>Competidores (alto rendimento e foco técnico)</li>
-      <li>Aulas particulares e personalizadas</li>
-    </ul>
-    <p>
-      Mais do que um espaço de treino, a JR ACADEMY é um ponto de encontro multicultural que conecta
-      tradição e modernidade, incentivando o respeito entre culturas e a superação de limites — no tatame e na vida.
-    </p>
+  <!-- FRANCÊS -->
+  <section class="lang-section lang-fr" data-aos="fade-up">
+    <section>
+      <p>Nous proposons des cours de Jiu-Jitsu Brésilien avec et sans kimono (grappling), destinés aux :</p>
+      <ul>
+        <li>Enfants</li>
+        <li>Adolescents</li>
+        <li>Adultes</li>
+        <li>Femmes</li>
+      </ul>
+      <p>Des cours personnalisés sont disponibles pour tous les niveaux.</p>
+    </section>
+    <section>
+      <h2>À propos de JR ACADEMY JJB</h2>
+      <p>À JR ACADEMY JJB, nous cultivons plus que des techniques de combat — nous promouvons le respect, la discipline, la confiance et le développement personnel grâce au Jiu-Jitsu Brésilien. Fondée par un professeur brésilien passionné, l'académie vise à transmettre les valeurs du sport avec authenticité, accueil et excellence.</p>
+      <p>Installé en France, le professeur apporte l’essence du Jiu-Jitsu directement du Brésil et adapte ses enseignements à tous les âges et objectifs.</p>
+    </section>
   </section>
 
-  <section class="infos" data-aos="fade-up" data-aos-delay="500">
+  <!-- INGLÊS -->
+  <section class="lang-section lang-en" data-aos="fade-up">
+    <section>
+      <p>We offer Brazilian Jiu-Jitsu classes with and without gi (submission/grappling), focused on:</p>
+      <ul>
+        <li>Children</li>
+        <li>Teenagers</li>
+        <li>Adults</li>
+        <li>Women</li>
+      </ul>
+      <p>We provide personalized lessons for all levels!</p>
+    </section>
+    <section>
+      <h2>About JR ACADEMY JJB</h2>
+      <p>At JR ACADEMY JJB, we cultivate more than combat techniques — we promote respect, discipline, confidence, and personal growth through Brazilian Jiu-Jitsu. Founded by a passionate Brazilian instructor, our academy’s mission is to transmit the values of the art with authenticity, care, and excellence.</p>
+      <p>Based in France, the professor brings the true essence of Brazilian Jiu-Jitsu and adapts the teachings for all ages and goals.</p>
+    </section>
+  </section>
+
+  <section class="infos" data-aos="fade-up">
     <p><strong>n° RNA:</strong> W841007602</p>
     <p><strong>n° SIREN:</strong> 942847765</p>
   </section>
 
-  <section class="location" data-aos="fade-up" data-aos-delay="600">
+  <section class="location" data-aos="fade-up">
     <h2>Localização</h2>
     <p><strong>Endereço:</strong> 45 Traverse du Couvent, Pertuis — 84120, França</p>
     <iframe 
       src="https://www.google.com/maps?q=45+Traverse+du+Couvent,+Pertuis,+84120,+França&output=embed"
-      width="100%" 
-      height="300" 
-      style="border:0; border-radius: 10px;" 
       allowfullscreen="" 
       loading="lazy">
     </iframe>
   </section>
 
-  <footer data-aos="fade-up" data-aos-delay="700">
+  <footer data-aos="fade-up">
     <p>Siga-nos nas redes sociais:</p>
-    <div style="margin-top: 20px; text-align: center;">
-      <a href="https://www.instagram.com/joaoramosdeandrade" target="_blank" style="text-decoration: none;">
+    <div style="margin-top: 20px;">
+      <a href="https://www.instagram.com/joaoramosdeandrade" target="_blank">
         <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" 
-             alt="Instagram" style="width: 32px; vertical-align: middle;">
-        <span style="margin-left: 10px; font-size: 16px; color: white;">
-          @joaoramosdeandrade
-        </span>
+             alt="Instagram" style="width: 32px;">
+        <span style="margin-left: 10px;">@joaoramosdeandrade</span>
       </a>
     </div>
-    <p>Site oficial: <a href="https://jracademyjjb.github.io" target="_blank" style="color: #ffcc00;">www.jracademyjjb.github.io</a></p>
+    <p>Site oficial: <a href="https://jracademyjjb.github.io" target="_blank">www.jracademyjjb.github.io</a></p>
   </footer>
 
-  <!-- Scripts AOS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>AOS.init();</script>
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('.lang-section').forEach(s => s.classList.remove('active'));
+      document.querySelector('.lang-' + lang).classList.add('active');
+    }
+  </script>
 </body>
 </html>
