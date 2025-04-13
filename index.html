@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JR ACADEMY JJB</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <title>JR Academy JJB</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
     * {
       margin: 0;
@@ -12,128 +12,145 @@
       box-sizing: border-box;
     }
     body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #fff;
-      color: #000;
+      font-family: Arial, sans-serif;
+      background-color: white;
+      color: black;
     }
     header {
-      background-color: #fff;
+      background-color: white;
+      padding: 20px;
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      padding: 20px 30px;
+      justify-content: flex-start;
     }
     .logo {
-      width: 100px;
-      height: auto;
+      height: 60px;
+    }
+    .flags {
+      text-align: center;
+      margin: 10px 0;
     }
     .flags img {
       width: 30px;
-      margin-left: 10px;
+      margin: 0 10px;
       cursor: pointer;
     }
-    .content {
-      background-color: #000;
-      color: #fff;
-      padding: 40px 20px;
+    .titulo {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 24px;
+      font-weight: bold;
     }
-    .content h2 {
-      color: #ffcc00;
-      margin-bottom: 20px;
+    .main-section {
+      background-color: black;
+      color: white;
+      padding: 30px 20px;
     }
-    .content p {
+    .main-section h2 {
+      color: white;
+      margin-bottom: 15px;
+    }
+    .main-section p {
       margin-bottom: 15px;
       line-height: 1.6;
     }
-    .content ul {
-      margin-top: 10px;
+    ul {
+      margin-left: 20px;
       margin-bottom: 20px;
-      padding-left: 20px;
     }
-    .content ul li {
-      margin-bottom: 5px;
+    ul li {
+      margin-bottom: 8px;
     }
     .info-image {
-      text-align: center;
+      max-width: 100%;
+      border-radius: 8px;
       margin-top: 20px;
-    }
-    .info-image img {
-      width: 100%;
-      max-width: 500px;
-      height: auto;
-      border-radius: 10px;
-    }
-    .map-section {
-      background-color: #000;
-      color: #fff;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    .map-section h2 {
-      color: #ffcc00;
-      margin-bottom: 10px;
     }
     iframe {
       width: 100%;
       height: 300px;
       border: none;
       border-radius: 10px;
-      margin-top: 10px;
+      margin-top: 30px;
     }
     footer {
-      background-color: #000;
-      color: #fff;
       text-align: center;
-      padding: 30px 20px;
+      background-color: #f3f3f3;
+      padding: 20px;
+      font-size: 14px;
     }
     footer a {
-      color: #ffcc00;
+      color: #000;
       text-decoration: none;
-    }
-    .instagram-icon {
-      width: 24px;
-      vertical-align: middle;
-      margin-right: 8px;
-    }
-    .lang-section {
-      display: none;
-    }
-    .lang-section.active {
-      display: block;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
+
+  <!-- TOPO -->
   <header>
-    <img src="logo_transparente.png" alt="Logo JR Academy" class="logo" />
-    <div class="flags">
-      <img src="https://flagcdn.com/w40/br.png" alt="Português" onclick="switchLang('pt')" />
-      <img src="https://flagcdn.com/w40/fr.png" alt="Français" onclick="switchLang('fr')" />
-      <img src="https://flagcdn.com/w40/gb.png" alt="English" onclick="switchLang('en')" />
-    </div>
+    <img src="logo_transparente.png" alt="Logo JR Academy" class="logo">
   </header>
 
-  <!-- Seção em Português -->
-  <section class="content lang-section lang-pt active">
-    <h2>JR ACADEMY JJB</h2>
-    <p>Acreditamos que o Jiu-Jitsu vai além de uma arte marcial — ele transforma vidas. Através da prática contínua, nossos alunos desenvolvem não apenas habilidades técnicas, mas também valores fundamentais como disciplina, autoconfiança, resiliência e respeito. O tatame se torna um espaço de crescimento pessoal e coletivo, onde cada desafio é uma oportunidade de evolução.</p>
-    <p>Fundada pelo professor brasileiro João Ramos na França, a JR Academy tem como missão ensinar com autenticidade, acolhimento e excelência. Trazendo a essência do Jiu-Jitsu Brasileiro diretamente de suas raízes, oferecemos uma abordagem humana e técnica, voltada para todos os níveis de praticantes.</p>
-    <p>Nossa academia conta com aulas com e sem kimono (submission/grappling), estruturadas para atender diversos perfis:</p>
+  <!-- BANDEIRAS -->
+  <div class="flags">
+    <img src="https://flagcdn.com/w40/br.png" alt="Português">
+    <img src="https://flagcdn.com/w40/fr.png" alt="Français">
+    <img src="https://flagcdn.com/w40/gb.png" alt="English">
+  </div>
+
+  <!-- TÍTULO -->
+  <div class="titulo">JR ACADEMY JJB</div>
+
+  <!-- SEÇÃO PRINCIPAL -->
+  <section class="main-section">
+    <p>
+      Acreditamos que o Jiu-Jitsu vai além de uma arte marcial — ele transforma vidas.
+      Através da prática contínua, nossos alunos desenvolvem não apenas habilidades técnicas,
+      mas também valores fundamentais como disciplina, autoconfiança, resiliência e respeito.
+    </p>
+    <p>
+      Fundada pelo professor brasileiro <strong>João Ramos</strong> na França, a JR Academy tem como missão ensinar com autenticidade,
+      acolhimento e excelência. Trazendo a essência do Jiu-Jitsu Brasileiro diretamente de suas raízes, oferecemos
+      uma abordagem humana e técnica, voltada para todos os níveis de praticantes.
+    </p>
+    <p>
+      Nossa academia conta com aulas com e sem kimono (submission/grappling), estruturadas para atender diversos perfis:
+    </p>
     <ul>
       <li><strong>Crianças</strong> — promovendo desenvolvimento físico, motor e social desde cedo.</li>
       <li><strong>Adolescentes</strong> — reforçando autoconfiança, controle emocional e superação.</li>
       <li><strong>Adultos</strong> — voltado ao bem-estar, saúde e hobby ou evolução técnica.</li>
       <li><strong>Mulheres</strong> — com foco em autodefesa, empoderamento e qualidade de vida.</li>
     </ul>
-    <p>Aqui, cada aluno é acompanhado com atenção, respeitando seus objetivos e ritmo. Seja para quem busca performance, autoconhecimento ou apenas uma nova jornada, a JR Academy JJB está de portas abertas.</p>
+    <p>
+      Aqui, cada aluno é acompanhado com atenção, respeitando seus objetivos e ritmo.
+      Seja para quem busca performance, autoconhecimento ou apenas uma nova jornada,
+      a JR Academy JJB está de portas abertas.
+    </p>
 
-    <div class="info-image">
-      <img src="info-jr-academy.jpeg" alt="Informações da JR Academy" />
-    </div>
+    <!-- IMAGEM INFORMATIVA -->
+    <h2>Informações da JR Academy</h2>
+    <img src="info-jr-academy.jpg" alt="Informações RNA e SIREN" class="info-image" />
   </section>
 
-  <!-- Seção em Francês -->
-  <section class="content lang-section lang-fr">
-    <h2>JR ACADEMY JJB</h2>
-    <p>Nous croyons que le Jiu-Jitsu va au-delà d'un art martial — il transforme des vies. Grâce à une pratique continue, nos élèves développent non seulement des compétences techniques, mais aussi des valeurs fondamentales telles que la discipline, la confiance en soi, la résilience et le respect. Le tatami devient un espace de croissance personnelle et collective, où chaque défi est une opportunité d'évolution.</p>
-    <p>Fondée par le professeur brésilien João Ramos en France, la JR Academy a pour mission d'enseigner avec authenticité, accueil et excellence. En apportant l'essence du Jiu-Jitsu Brésilien directement de ses racines, nous offrons 
+  <!-- LOCALIZAÇÃO -->
+  <iframe 
+    src="https://www.google.com/maps?q=45+Traverse+du+Couvent,+Pertuis,+84120,+França&output=embed"
+    allowfullscreen
+    loading="lazy">
+  </iframe>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <p>
+      Instagram: <a href="https://www.instagram.com/joaoramosdeandrade" target="_blank">@joaoramosdeandrade</a>
+    </p>
+    <p>
+      Site oficial: <a href="https://jracademyjjb.github.io" target="_blank">jracademyjjb.github.io</a>
+    </p>
+  </footer>
+
+</body>
+</html>
