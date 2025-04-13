@@ -4,82 +4,82 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>JR ACADEMY JJB</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Roboto', sans-serif;
-      background-color: #fff;
-      color: #000;
+      background-color: #000;
+      color: #fff;
     }
     header {
-      padding: 20px;
-      text-align: left;
+      background: #fff;
       display: flex;
       align-items: center;
-      background-color: #fff;
+      justify-content: space-between;
+      padding: 15px 30px;
     }
     .logo {
-      width: 80px;
-      height: auto;
-      margin-right: 20px;
-    }
-    .flags {
-      text-align: center;
-      margin-bottom: 20px;
+      width: 100px;
     }
     .flags img {
       width: 30px;
-      margin: 0 5px;
+      margin-left: 10px;
       cursor: pointer;
     }
-    .content {
-      background-color: #000;
-      color: #fff;
-      padding: 30px 20px;
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
     }
-    .content p {
+    h2 {
+      color: #ffcc00;
+      margin-bottom: 20px;
+    }
+    p, li {
+      font-size: 16px;
       margin-bottom: 15px;
       line-height: 1.6;
     }
-    .content ul {
-      margin-top: 10px;
-      margin-bottom: 20px;
+    ul {
       padding-left: 20px;
     }
-    .content ul li {
-      margin-bottom: 5px;
-    }
-    .info-image {
-      text-align: center;
-      margin-top: 20px;
-    }
-    .info-image img {
+    iframe {
       width: 100%;
-      max-width: 500px;
-      height: auto;
+      height: 300px;
+      border: none;
       border-radius: 10px;
     }
+    footer {
+      text-align: center;
+      background: #111;
+      padding: 30px 20px;
+      color: white;
+    }
+    footer a {
+      color: #ffcc00;
+      text-decoration: none;
+    }
+    .lang-section { display: none; }
+    .lang-section.active { display: block; }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo_transparente.png" alt="Logo JR Academy" class="logo" />
+    <img src="logo_transparente_convertido.png" alt="Logo" class="logo" />
+    <div class="flags">
+      <img src="https://flagcdn.com/w40/br.png" onclick="switchLang('pt')" alt="Português">
+      <img src="https://flagcdn.com/w40/fr.png" onclick="switchLang('fr')" alt="Français">
+      <img src="https://flagcdn.com/w40/gb.png" onclick="switchLang('en')" alt="English">
+    </div>
   </header>
 
-  <div class="flags">
-    <img src="https://flagcdn.com/w40/br.png" alt="Português" />
-    <img src="https://flagcdn.com/w40/fr.png" alt="Français" />
-    <img src="https://flagcdn.com/w40/gb.png" alt="English" />
-  </div>
-
-  <section class="content">
-    <p>Fundada por um professor brasileiro na França, João Ramos, a academia tem como missão ensinar com autenticidade, acolhimento e excelência.</p>
-    <p>Promovemos respeito, disciplina, confiança e evolução pessoal por meio do Jiu-Jitsu Brasileiro. Acreditamos no poder transformador da arte suave na vida das pessoas — seja para o bem-estar físico, mental, autodefesa ou superação de desafios.</p>
+  <!-- PORTUGUÊS -->
+  <section class="lang-section lang-pt active">
+    <h2>JR ACADEMY JJB</h2>
+    <p>Fundada por João Ramos, professor brasileiro na França, nossa missão é ensinar com autenticidade, acolhimento e excelência.</p>
+    <p>Promovemos respeito, disciplina, confiança e evolução pessoal por meio do Jiu-Jitsu Brasileiro.</p>
     <p>Oferecemos aulas de Jiu-Jitsu Brasileiro com e sem kimono (submission/grappling), voltadas para:</p>
     <ul>
       <li>Crianças</li>
@@ -88,10 +88,63 @@
       <li>Mulheres</li>
     </ul>
     <p>Temos aulas personalizadas para todos os níveis!</p>
-
-    <div class="info-image">
-      <img src="info-jr-academy.jpeg" alt="Informações da JR Academy" />
-    </div>
   </section>
+
+  <!-- FRANCÊS -->
+  <section class="lang-section lang-fr">
+    <h2>JR ACADEMY JJB</h2>
+    <p>Fondée par João Ramos, professeur brésilien en France, notre mission est d'enseigner avec authenticité, accueil et excellence.</p>
+    <p>Nous promouvons le respect, la discipline, la confiance et l'évolution personnelle grâce au Jiu-Jitsu Brésilien.</p>
+    <p>Nous proposons des cours avec et sans kimono (grappling), destinés à :</p>
+    <ul>
+      <li>Enfants</li>
+      <li>Adolescents</li>
+      <li>Adultes</li>
+      <li>Femmes</li>
+    </ul>
+    <p>Des cours personnalisés sont disponibles pour tous les niveaux !</p>
+  </section>
+
+  <!-- INGLÊS -->
+  <section class="lang-section lang-en">
+    <h2>JR ACADEMY JJB</h2>
+    <p>Founded by João Ramos, a Brazilian professor living in France, our mission is to teach with authenticity, care, and excellence.</p>
+    <p>We promote respect, discipline, confidence, and personal development through Brazilian Jiu-Jitsu.</p>
+    <p>We offer classes with and without gi (submission/grappling), designed for:</p>
+    <ul>
+      <li>Children</li>
+      <li>Teenagers</li>
+      <li>Adults</li>
+      <li>Women</li>
+    </ul>
+    <p>We provide personalized lessons for all levels!</p>
+  </section>
+
+  <!-- LOCALIZAÇÃO -->
+  <section>
+    <h2>Localização</h2>
+    <p><strong>Endereço:</strong> 45 Traverse du Couvent, Pertuis — 84120, França</p>
+    <iframe src="https://www.google.com/maps?q=45+Traverse+du+Couvent,+Pertuis,+84120,+França&output=embed" loading="lazy"></iframe>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <p>Siga-nos no Instagram:</p>
+    <a href="https://www.instagram.com/joaoramosdeandrade" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="30">
+      <span>@joaoramosdeandrade</span>
+    </a>
+    <p style="margin-top: 10px;">Site oficial: <a href="https://jracademyjjb.github.io" target="_blank">www.jracademyjjb.github.io</a></p>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('.lang-section').forEach(el => el.classList.remove('active'));
+      document.querySelector('.lang-' + lang).classList.add('active');
+    }
+  </script>
 </body>
 </html>
