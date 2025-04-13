@@ -10,26 +10,28 @@
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Roboto', sans-serif;
-      background-color: #111;
-      color: #fff;
+      background-color: #f7f7f7;
+      color: #000;
       line-height: 1.6;
       padding-bottom: 50px;
     }
     header {
-      text-align: center;
-      padding: 30px 20px 10px;
-      background-color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 20px;
+      background-color: #fff;
     }
     .logo {
-      width: 120px;
-      margin-bottom: 10px;
+      width: 100px;
+      margin-right: 20px;
     }
     h1 {
       font-size: 2rem;
-      color: #ffcc00;
     }
     .flags {
       margin-top: 15px;
+      text-align: center;
     }
     .flags img {
       width: 30px;
@@ -41,7 +43,10 @@
       max-width: 900px;
       margin: 0 auto;
     }
-    section h2 { color: #ffcc00; margin-bottom: 10px; }
+    section h2 {
+      color: #000;
+      margin-bottom: 10px;
+    }
     ul {
       list-style: disc;
       padding-left: 20px;
@@ -54,99 +59,88 @@
       border-radius: 10px;
       margin-top: 10px;
     }
-    .rna-img {
-      display: flex;
-      justify-content: center;
-      margin: 20px auto;
-      max-width: 400px;
-    }
-    .rna-img img {
-      width: 100%;
-      border-radius: 10px;
-    }
     footer {
       text-align: center;
-      background-color: #000;
+      background-color: #eee;
       padding: 30px 20px;
     }
-    footer a { color: #ffcc00; text-decoration: none; }
-    footer span { color: #fff; }
+    footer a {
+      color: #000;
+      text-decoration: none;
+    }
+    footer span {
+      color: #000;
+    }
     .lang-section { display: none; }
     .lang-section.active { display: block; }
+    .info-img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 20px auto;
+      border-radius: 10px;
+    }
   </style>
 </head>
 <body>
   <header data-aos="fade-down">
     <img src="logo.png.jpg" alt="Logo JR ACADEMY JJB" class="logo" />
     <h1>JR ACADEMY JJB</h1>
-    <div class="flags">
-      <img src="https://flagcdn.com/w40/br.png" alt="Português" onclick="switchLang('pt')" />
-      <img src="https://flagcdn.com/w40/fr.png" alt="Français" onclick="switchLang('fr')" />
-      <img src="https://flagcdn.com/w40/gb.png" alt="English" onclick="switchLang('en')" />
-    </div>
   </header>
+
+  <div class="flags" data-aos="fade-up">
+    <img src="https://flagcdn.com/w40/br.png" alt="Português" onclick="switchLang('pt')" />
+    <img src="https://flagcdn.com/w40/fr.png" alt="Français" onclick="switchLang('fr')" />
+    <img src="https://flagcdn.com/w40/gb.png" alt="English" onclick="switchLang('en')" />
+  </div>
 
   <!-- PORTUGUÊS -->
   <section class="lang-section lang-pt active" data-aos="fade-up">
-    <section>
-      <p>Oferecemos aulas de Jiu-Jitsu Brasileiro com e sem kimono (submission/grappling), voltadas para:</p>
-      <ul>
-        <li>Crianças</li>
-        <li>Adolescentes</li>
-        <li>Adultos</li>
-        <li>Mulheres</li>
-      </ul>
-      <p>Temos aulas personalizadas para todos os níveis!</p>
-    </section>
-    <section>
-      <h2>Sobre a JR ACADEMY JJB</h2>
-      <p>Na JR ACADEMY JJB, cultivamos mais do que técnicas de combate — promovemos respeito, disciplina, confiança e evolução pessoal por meio do Jiu-Jitsu Brasileiro. Fundada por um professor brasileiro apaixonado pela arte suave, a academia tem como missão transmitir os valores do esporte com autenticidade, acolhimento e excelência.</p>
-      <p>Estabelecido na França, o professor traz consigo a essência do Jiu-Jitsu diretamente do Brasil, adaptando os ensinamentos para públicos de todas as idades e objetivos.</p>
-    </section>
+    <h2>Bem-vindo à JR ACADEMY JJB</h2>
+    <p>Oferecemos aulas de Jiu-Jitsu Brasileiro com e sem kimono (submission/grappling), voltadas para:</p>
+    <ul>
+      <li>Crianças</li>
+      <li>Adolescentes</li>
+      <li>Adultos</li>
+      <li>Mulheres</li>
+    </ul>
+    <p>Temos aulas personalizadas para todos os níveis!</p>
+    <h2>Sobre a JR ACADEMY JJB</h2>
+    <p>Na JR ACADEMY JJB, promovemos respeito, disciplina, confiança e evolução pessoal por meio do Jiu-Jitsu Brasileiro.</p>
+    <p>Fundada por um professor brasileiro na França, nossa missão é ensinar com autenticidade, acolhimento e excelência.</p>
   </section>
 
   <!-- FRANCÊS -->
   <section class="lang-section lang-fr" data-aos="fade-up">
-    <section>
-      <p>Nous proposons des cours de Jiu-Jitsu Brésilien avec et sans kimono (grappling), destinés aux :</p>
-      <ul>
-        <li>Enfants</li>
-        <li>Adolescents</li>
-        <li>Adultes</li>
-        <li>Femmes</li>
-      </ul>
-      <p>Des cours personnalisés sont disponibles pour tous les niveaux.</p>
-    </section>
-    <section>
-      <h2>À propos de JR ACADEMY JJB</h2>
-      <p>À JR ACADEMY JJB, nous cultivons plus que des techniques de combat — nous promouvons le respect, la discipline, la confiance et le développement personnel grâce au Jiu-Jitsu Brésilien. Fondée par un professeur brésilien passionné, l'académie vise à transmettre les valeurs du sport avec authenticité, accueil et excellence.</p>
-      <p>Installé en France, le professeur apporte l’essence du Jiu-Jitsu directement du Brésil et adapte ses enseignements à tous les âges et objectifs.</p>
-    </section>
+    <h2>Bienvenue à JR ACADEMY JJB</h2>
+    <p>Nous proposons des cours de Jiu-Jitsu Brésilien avec et sans kimono (grappling), destinés aux :</p>
+    <ul>
+      <li>Enfants</li>
+      <li>Adolescents</li>
+      <li>Adultes</li>
+      <li>Femmes</li>
+    </ul>
+    <p>Des cours personnalisés sont disponibles pour tous les niveaux.</p>
+    <h2>À propos de JR ACADEMY JJB</h2>
+    <p>Nous promouvons le respect, la discipline et le développement personnel à travers le Jiu-Jitsu Brésilien.</p>
+    <p>Fondée par un professeur brésilien en France, notre mission est de transmettre l’art avec authenticité et excellence.</p>
   </section>
 
   <!-- INGLÊS -->
   <section class="lang-section lang-en" data-aos="fade-up">
-    <section>
-      <p>We offer Brazilian Jiu-Jitsu classes with and without gi (submission/grappling), focused on:</p>
-      <ul>
-        <li>Children</li>
-        <li>Teenagers</li>
-        <li>Adults</li>
-        <li>Women</li>
-      </ul>
-      <p>We provide personalized lessons for all levels!</p>
-    </section>
-    <section>
-      <h2>About JR ACADEMY JJB</h2>
-      <p>At JR ACADEMY JJB, we cultivate more than combat techniques — we promote respect, discipline, confidence, and personal growth through Brazilian Jiu-Jitsu. Founded by a passionate Brazilian instructor, our academy’s mission is to transmit the values of the art with authenticity, care, and excellence.</p>
-      <p>Based in France, the professor brings the true essence of Brazilian Jiu-Jitsu and adapts the teachings for all ages and goals.</p>
-    </section>
+    <h2>Welcome to JR ACADEMY JJB</h2>
+    <p>We offer Brazilian Jiu-Jitsu classes with and without gi (submission/grappling), for:</p>
+    <ul>
+      <li>Children</li>
+      <li>Teenagers</li>
+      <li>Adults</li>
+      <li>Women</li>
+    </ul>
+    <p>We provide personalized training for all levels.</p>
+    <h2>About JR ACADEMY JJB</h2>
+    <p>We promote respect, discipline and personal growth through Brazilian Jiu-Jitsu.</p>
+    <p>Founded by a Brazilian professor in France, our mission is to teach with authenticity, care and excellence.</p>
   </section>
-
-  <!-- IMAGEM DO RNA/SIREN -->
-  <div class="rna-img" data-aos="fade-up">
-    <img src="info-jr-academy.jpeg" alt="Informações da JR Academy JJB" />
-  </div>
 
   <section class="location" data-aos="fade-up">
     <h2>Localização</h2>
@@ -156,6 +150,10 @@
       allowfullscreen="" 
       loading="lazy">
     </iframe>
+  </section>
+
+  <section class="img-info" data-aos="fade-up">
+    <img src="info-jr-academy.jpeg" alt="Informações da JR Academy" class="info-img" />
   </section>
 
   <footer data-aos="fade-up">
@@ -171,8 +169,8 @@
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();</script>
   <script>
+    AOS.init();
     function switchLang(lang) {
       document.querySelectorAll('.lang-section').forEach(s => s.classList.remove('active'));
       document.querySelector('.lang-' + lang).classList.add('active');
