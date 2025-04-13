@@ -7,50 +7,40 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Roboto', sans-serif;
-      background-color: #f7f7f7;
-      color: #000;
-      line-height: 1.6;
+      background: white;
+      color: black;
       padding-bottom: 50px;
     }
     header {
       display: flex;
       align-items: center;
-      justify-content: flex-start;
       padding: 20px;
-      background-color: #fff;
     }
     .logo {
-      width: 100px;
+      width: 60px;
       margin-right: 20px;
     }
     h1 {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
     .flags {
-      margin-top: 15px;
-      text-align: center;
+      margin: 10px 20px;
     }
     .flags img {
       width: 30px;
-      margin: 0 10px;
+      margin: 0 5px;
       cursor: pointer;
     }
     section {
-      padding: 30px 20px;
+      padding: 20px;
       max-width: 900px;
-      margin: 0 auto;
-    }
-    section h2 {
-      color: #000;
-      margin-bottom: 10px;
+      margin: auto;
     }
     ul {
-      list-style: disc;
-      padding-left: 20px;
-      margin-top: 10px;
+      margin: 10px 0 20px 20px;
     }
     iframe {
       width: 100%;
@@ -61,34 +51,22 @@
     }
     footer {
       text-align: center;
-      background-color: #eee;
+      background: #eee;
       padding: 30px 20px;
+      font-size: 0.9rem;
     }
-    footer a {
-      color: #000;
-      text-decoration: none;
-    }
-    footer span {
-      color: #000;
-    }
+    footer a { color: #000; text-decoration: none; }
     .lang-section { display: none; }
     .lang-section.active { display: block; }
-    .info-img {
-      display: block;
-      max-width: 100%;
-      height: auto;
-      margin: 20px auto;
-      border-radius: 10px;
-    }
   </style>
 </head>
 <body>
   <header data-aos="fade-down">
-    <img src="logo.png.jpg" alt="Logo JR ACADEMY JJB" class="logo" />
-    <h1>JR ACADEMY JJB</h1>
+    <img src="logo.PNG" alt="Logo" class="logo" />
+    <h1>ACADEMY JIU-JITSU BRASILEIRO</h1>
   </header>
 
-  <div class="flags" data-aos="fade-up">
+  <div class="flags">
     <img src="https://flagcdn.com/w40/br.png" alt="Português" onclick="switchLang('pt')" />
     <img src="https://flagcdn.com/w40/fr.png" alt="Français" onclick="switchLang('fr')" />
     <img src="https://flagcdn.com/w40/gb.png" alt="English" onclick="switchLang('en')" />
@@ -96,7 +74,7 @@
 
   <!-- PORTUGUÊS -->
   <section class="lang-section lang-pt active" data-aos="fade-up">
-    <h2>Bem-vindo à JR ACADEMY JJB</h2>
+    <p>Fundada por um professor brasileiro na França, nossa missão é ensinar com autenticidade, acolhimento e excelência. Promovemos respeito, disciplina, confiança e evolução pessoal por meio do Jiu-Jitsu Brasileiro.</p>
     <p>Oferecemos aulas de Jiu-Jitsu Brasileiro com e sem kimono (submission/grappling), voltadas para:</p>
     <ul>
       <li>Crianças</li>
@@ -105,72 +83,56 @@
       <li>Mulheres</li>
     </ul>
     <p>Temos aulas personalizadas para todos os níveis!</p>
-    <h2>Sobre a JR ACADEMY JJB</h2>
-    <p>Na JR ACADEMY JJB, promovemos respeito, disciplina, confiança e evolução pessoal por meio do Jiu-Jitsu Brasileiro.</p>
-    <p>Fundada por um professor brasileiro na França, nossa missão é ensinar com autenticidade, acolhimento e excelência.</p>
   </section>
 
   <!-- FRANCÊS -->
   <section class="lang-section lang-fr" data-aos="fade-up">
-    <h2>Bienvenue à JR ACADEMY JJB</h2>
-    <p>Nous proposons des cours de Jiu-Jitsu Brésilien avec et sans kimono (grappling), destinés aux :</p>
+    <p>Fondée par un professeur brésilien installé en France, notre mission est de transmettre avec authenticité, accueil et excellence. Nous favorisons le respect, la discipline, la confiance et le développement personnel à travers le Jiu-Jitsu brésilien.</p>
+    <p>Nous proposons des cours avec et sans kimono (grappling), destinés à :</p>
     <ul>
       <li>Enfants</li>
       <li>Adolescents</li>
       <li>Adultes</li>
       <li>Femmes</li>
     </ul>
-    <p>Des cours personnalisés sont disponibles pour tous les niveaux.</p>
-    <h2>À propos de JR ACADEMY JJB</h2>
-    <p>Nous promouvons le respect, la discipline et le développement personnel à travers le Jiu-Jitsu Brésilien.</p>
-    <p>Fondée par un professeur brésilien en France, notre mission est de transmettre l’art avec authenticité et excellence.</p>
+    <p>Cours personnalisés pour tous les niveaux !</p>
   </section>
 
   <!-- INGLÊS -->
   <section class="lang-section lang-en" data-aos="fade-up">
-    <h2>Welcome to JR ACADEMY JJB</h2>
-    <p>We offer Brazilian Jiu-Jitsu classes with and without gi (submission/grappling), for:</p>
+    <p>Founded by a Brazilian instructor in France, our mission is to teach with authenticity, care, and excellence. We promote respect, discipline, confidence, and personal growth through Brazilian Jiu-Jitsu.</p>
+    <p>We offer gi and no-gi classes (submission/grappling), tailored to:</p>
     <ul>
       <li>Children</li>
       <li>Teenagers</li>
       <li>Adults</li>
       <li>Women</li>
     </ul>
-    <p>We provide personalized training for all levels.</p>
-    <h2>About JR ACADEMY JJB</h2>
-    <p>We promote respect, discipline and personal growth through Brazilian Jiu-Jitsu.</p>
-    <p>Founded by a Brazilian professor in France, our mission is to teach with authenticity, care and excellence.</p>
+    <p>Customized lessons available for all levels!</p>
+  </section>
+
+  <section class="infos" data-aos="fade-up">
+    <img src="info-jr-academy.jpeg" alt="Informações da JR Academy" style="width:100%; max-width:700px; display:block; margin:auto; border-radius:10px;">
   </section>
 
   <section class="location" data-aos="fade-up">
     <h2>Localização</h2>
     <p><strong>Endereço:</strong> 45 Traverse du Couvent, Pertuis — 84120, França</p>
-    <iframe 
-      src="https://www.google.com/maps?q=45+Traverse+du+Couvent,+Pertuis,+84120,+França&output=embed"
-      allowfullscreen="" 
-      loading="lazy">
-    </iframe>
-  </section>
-
-  <section class="img-info" data-aos="fade-up">
-    <img src="info-jr-academy.jpeg" alt="Informações da JR Academy" class="info-img" />
+    <iframe src="https://www.google.com/maps?q=45+Traverse+du+Couvent,+Pertuis,+84120,+França&output=embed" allowfullscreen="" loading="lazy"></iframe>
   </section>
 
   <footer data-aos="fade-up">
-    <p>Siga-nos nas redes sociais:</p>
-    <div style="margin-top: 20px;">
-      <a href="https://www.instagram.com/joaoramosdeandrade" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" 
-             alt="Instagram" style="width: 32px;">
-        <span style="margin-left: 10px;">@joaoramosdeandrade</span>
-      </a>
-    </div>
+    <p>Redes sociais:</p>
+    <a href="https://www.instagram.com/joaoramosdeandrade" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 30px; vertical-align: middle;">
+      <span>@joaoramosdeandrade</span>
+    </a>
     <p>Site oficial: <a href="https://jracademyjjb.github.io" target="_blank">www.jracademyjjb.github.io</a></p>
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
   <script>
-    AOS.init();
     function switchLang(lang) {
       document.querySelectorAll('.lang-section').forEach(s => s.classList.remove('active'));
       document.querySelector('.lang-' + lang).classList.add('active');
